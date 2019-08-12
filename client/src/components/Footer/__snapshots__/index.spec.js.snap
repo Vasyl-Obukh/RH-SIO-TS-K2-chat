@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> tests Should render correctly 1`] = `
+<styled.div>
+  <styled.p>
+    test copyright
+  </styled.p>
+</styled.div>
+`;
+
+exports[`<Footer /> tests Should render correctly without passed copyright text 1`] = `
+<styled.div>
+  <styled.p>
+    Copyright © 2019 by Vasyl Obukh. All Rights Reserved.
+  </styled.p>
+</styled.div>
+`;

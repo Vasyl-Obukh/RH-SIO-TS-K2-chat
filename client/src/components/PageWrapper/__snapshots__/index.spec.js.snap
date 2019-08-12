@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PageWrapper /> tests Should render correctly 1`] = `
+<Fragment>
+  <Header />
+  <test />
+  <Footer />
+</Fragment>
+`;

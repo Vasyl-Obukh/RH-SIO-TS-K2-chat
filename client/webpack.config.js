@@ -58,7 +58,7 @@ const conf = {
     ]
   },
   devServer: {
-    port: 8080,
+    port: 7080,
     overlay: true,
     historyApiFallback: true,
     publicPath: '/',
