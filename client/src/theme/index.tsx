@@ -1,5 +1,5 @@
 export default {
   primaryColor: '#00008B',
-  primaryReverseColor: '#ffffff',
+  primaryReverseColor: '#fafafa',
   fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
 };

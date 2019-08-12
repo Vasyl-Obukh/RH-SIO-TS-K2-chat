@@ -2,8 +2,6 @@ const path               = require('path');
 const webpack            = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin  = require('html-webpack-plugin');
-const CopyWebpackPlugin  = require('copy-webpack-plugin');
-const ImageminPlugin     = require('imagemin-webpack-plugin').default;
 const ExtractTextPlugin  = require('extract-text-webpack-plugin');
 
 const conf = {
@@ -29,18 +27,6 @@ const conf = {
         })
       },
       {
-        test: /\.(png|gif|jpe?g)$/,
-        loaders: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '/static/images/[name].[ext]'
-            }
-          },
-          'img-loader'
-        ]
-      },
-      {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
         use: [
           {
@@ -50,10 +36,6 @@ const conf = {
             }
           }
         ]
-      },
-      {
-        test: /\.svg$/,
-        loader: 'svg-url-loader'
       }
     ]
   },
@@ -67,15 +49,8 @@ const conf = {
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      template: './public/index.html',
-      //favicon: './public/favicon.ico'
+      template: './public/index.html'
     }),
-    new CopyWebpackPlugin([
-      {
-        from: './src/static/images',
-        to: './static/images'
-      }
-    ]),
     new ExtractTextPlugin('./assets/styles/index.css')
   ]
 };
@@ -85,9 +60,6 @@ module.exports = (env, options) => {
   conf.devtool = production ? false : 'eval-sourcemap';
   if (production) {
     conf.plugins.push(
-      new ImageminPlugin({
-        test: /\.(png|jpe?g|gif|svg)$/i
-      }),
       new webpack.LoaderOptionsPlugin({
         minimize: true
       })

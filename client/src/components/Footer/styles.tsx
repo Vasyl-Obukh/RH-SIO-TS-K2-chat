@@ -9,4 +9,6 @@ export const Container = styled.div`
 export const Copyright = styled.p`
   text-align: center;
   color: inherit;
+  font-style: italic;
+  font-size: 14px;
 `;

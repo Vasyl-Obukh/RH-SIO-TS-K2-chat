@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card /> tests Should render correctly 1`] = `
+<styled.li>
+  <Styled(Link)
+    to="test url"
+  >
+    test title
+  </Styled(Link)>
+</styled.li>
+`;

@@ -3,7 +3,9 @@
 exports[`<PageWrapper /> tests Should render correctly 1`] = `
 <Fragment>
   <Header />
-  <test />
+  <styled.div>
+    <test />
+  </styled.div>
   <Footer />
 </Fragment>
 `;
