@@ -4,7 +4,7 @@ import Footer from '../Footer';
 import * as Styles from './styles';
 
 interface Props {
-  component: React.FC
+  component: any
 }
 
 function PageWrapper({ component: Component }: Props) {

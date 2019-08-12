@@ -2,9 +2,6 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const Wrapper = styled.li`
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 15px 10px;
   height: 125px;
   width: 250px;
@@ -22,6 +19,10 @@ export const Wrapper = styled.li`
 `;
 
 export const Title = styled(Link)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
   text-decoration: none;
   color: inherit;
   font-size: 24px;
