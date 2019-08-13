@@ -1,4 +1,5 @@
 export default {
   HOME: '/',
-  ROOM: '/room-:roomName'
+  ROOM: '/room-:roomName',
+  SIGN_PAGE: '/sign'
 }
